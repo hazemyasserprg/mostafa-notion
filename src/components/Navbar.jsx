@@ -2,8 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import lightLogo from "../assets/imgs/logos/lightLogo.webp";
 import BlurText from "./BlurText";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
