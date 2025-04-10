@@ -1,4 +1,4 @@
-import blogImg from "../assets/imgs/blogs/Screenshots of notion templates.png";
+import blogImg from "../assets/imgs/blogs/NotionBlog.webp";
 
 const blogsData = [
   {

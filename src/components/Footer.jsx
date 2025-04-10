@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { FilloutSliderEmbed } from "@fillout/react";
-import templateOne from "../assets/imgs/youtube/2.png";
-import templateTwo from "../assets/imgs/youtube/1.png";
-import templateThree from "../assets/imgs/youtube/3.png";
+import templateOne from "../assets/imgs/youtube/2.webp";
+import templateTwo from "../assets/imgs/youtube/1.webp";
+import templateThree from "../assets/imgs/youtube/3.webp";
 import { RiNotionFill } from "react-icons/ri";
 import {
   BsFacebook,

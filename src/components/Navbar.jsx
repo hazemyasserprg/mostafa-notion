@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { gsap } from "gsap";
-import lightLogo from "../assets/imgs/logos/lightLogo.png";
+import lightLogo from "../assets/imgs/logos/lightLogo.webp";
 import BlurText from "./BlurText";
 
 function Navbar() {

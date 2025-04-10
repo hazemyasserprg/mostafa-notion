@@ -1,5 +1,5 @@
 import { MdEmail } from "react-icons/md";
-import aboutImg from "../assets/imgs/mostafa/mostafa.png";
+import aboutImg from "../assets/imgs/mostafa/mostafa.webp";
 import BlurText from "../components/BlurText";
 
 function AboutMe() {

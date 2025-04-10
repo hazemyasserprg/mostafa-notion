@@ -1,15 +1,5 @@
 import { Link } from "react-router-dom";
-import templateOne from "../assets/imgs/thumbnails/1.png";
-import templateTwo from "../assets/imgs/thumbnails/2.png";
-import templateThree from "../assets/imgs/thumbnails/3.png";
-import templateFour from "../assets/imgs/thumbnails/4.png";
-import templateFive from "../assets/imgs/thumbnails/5.png";
-import templateSix from "../assets/imgs/thumbnails/6.png";
-import templateSeven from "../assets/imgs/thumbnails/7.png";
-import templateEight from "../assets/imgs/thumbnails/8.png";
-import templateNine from "../assets/imgs/thumbnails/9.png";
-import templateTen from "../assets/imgs/thumbnails/10.png";
-import templateEleven from "../assets/imgs/thumbnails/11.png";
+import images from "../data/templateImages";
 
 import BlurText from "./BlurText";
 import FadeInSection from "./FadeInSection";
@@ -22,14 +12,14 @@ const templates = {
       name: "Quran Tracker Premium",
       slug: "quran-tracker-premium",
       price: "$5",
-      image: templateOne,
+      image: images.templateOne,
     },
     {
       id: 2,
       name: "90-Day Challenge Premium",
       slug: "90-day-challenge-premium",
       price: "$3",
-      image: templateTwo,
+      image: images.templateTwo,
     },
   ],
   moreTemplates: [
@@ -38,21 +28,21 @@ const templates = {
       name: "Ibadat Tracker",
       slug: "ibadat-tracker",
       price: "$0",
-      image: templateThree,
+      image: images.templateThree,
     },
     {
       id: 4,
       name: "Quran Tracker",
       slug: "quran-tracker",
       price: "$0",
-      image: templateFour,
+      image: images.templateFour,
     },
     {
       id: 5,
       name: "Study Planner",
       slug: "study-planner",
       price: "$0",
-      image: templateFive,
+      image: images.templateFive,
     },
   ],
   largeCollection: [
@@ -61,42 +51,42 @@ const templates = {
       name: "Weekly Planner",
       slug: "weekly-planner",
       price: "$0",
-      image: templateSix,
+      image: images.templateSix,
     },
     {
       id: 7,
       name: "Habit Tracker",
       slug: "habit-tracker",
       price: "$0",
-      image: templateSeven,
+      image: images.templateSeven,
     },
     {
       id: 8,
       name: "Reading Tracker",
       slug: "reading-tracker",
       price: "$0",
-      image: templateEight,
+      image: images.templateEight,
     },
     {
       id: 9,
       name: "90-Day Challenge",
       slug: "90-day-challenge",
       price: "$0",
-      image: templateNine,
+      image: images.templateNine,
     },
     {
       id: 10,
       name: "Quran Memorization",
       slug: "quran-memorization",
       price: "$0",
-      image: templateTen,
+      image: images.templateTen,
     },
     {
       id: 11,
       name: "Ramadan Tracker",
       slug: "ramadan-tracker",
       price: "$0",
-      image: templateEleven,
+      image: images.templateEleven,
     },
   ],
 };
