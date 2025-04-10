@@ -5,7 +5,7 @@ import BlurText from "./BlurText";
 
 function GoToTemplatesPageButton({ text }) {
   return (
-    <BlurText duration={4}>
+    <BlurText duration={5.5}>
       <div className="flex justify-center mt-6 sm:mt-10 relative z-10 px-4">
         {/* Glow behind the button */}
         <motion.div

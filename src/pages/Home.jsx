@@ -16,7 +16,7 @@ function Home() {
             />
           </h1>
         </AnimatedText>
-        <AnimatedWrapper delay={2.5}>
+        <AnimatedWrapper delay={3.5}>
           <p className="text-base sm:text-lg md:text-xl text-main mt-4 max-w-2xl mx-auto px-4 font-light tracking-tight">
             Simple, powerful tools to help you stay focused, build better
             habits, and get things done—your way.
@@ -24,7 +24,7 @@ function Home() {
         </AnimatedWrapper>
         <GoToTemplatesPageButton text={"Browse All Templates"} />
 
-        <AnimatedWrapper delay={2.5}>
+        <AnimatedWrapper delay={3.5}>
           <SubscriptionForm
             className={
               "mt-15 w-full max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3 px-4 sm:px-6"
