@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Loader from "./components/Loader";
 
 // Lazy loaded pages
-const Home = lazy(() => import("./pages/Home"));
+import Home from "./pages/Home";
 const Templates = lazy(() => import("./pages/Templates"));
 const TemplateDetails = lazy(() => import("./pages/TemplateDetails"));
 const Blogs = lazy(() => import("./pages/Blogs"));
