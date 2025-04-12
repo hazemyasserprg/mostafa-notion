@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import blogsData from "../data/blogsData";
 import BlurText from "../components/BlurText";
+import ReactMarkdown from "react-markdown";
 
 function BlogDetails() {
   const { slug } = useParams();
@@ -8,12 +9,28 @@ function BlogDetails() {
 
   if (!blog) return <div className="p-6">Blog not found.</div>;
 
-  const renderContentWithLineBreaks = (content) => {
-    const paragraphs = content.split("\n");
+  const formatContent = (content) => {
+    return content.replace(/\n/g, "<br />");
+  };
 
-    return paragraphs.map((para, index) => {
-      return <p key={index}>{para}</p>;
-    });
+  const customComponents = {
+    // For custom links
+    a: ({ href, children }) => (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-main text-2xl font-normal cursor-pointer border-b-2 border-b-main hover:text-[25px]  transition-all duration-300 hover:border-b-gray-300 hover:text-gray-300"
+      >
+        {children}
+      </a>
+    ),
+
+    p: ({ children }) => (
+      <p className=" text-main leading-relaxed text-2xl font-normal">
+        {children}
+      </p>
+    ),
   };
 
   return (
@@ -36,7 +53,7 @@ function BlogDetails() {
                       href={`#${topic.id}`}
                       className="text-gray-300 hover:text-main transition-colors duration-300 font-medium"
                     >
-                      {topic.heading}
+                      {topic.tocTitle}
                     </a>
                   </li>
                 ))}
@@ -62,11 +79,16 @@ function BlogDetails() {
             {blog.topics.map((topic) => (
               <section key={topic.id} id={topic.id} className="mb-16">
                 <h3 className="text-2xl font-semibold text-main mb-4">
-                  {topic.heading}
+                  <ReactMarkdown components={customComponents}>
+                    {topic.heading}
+                  </ReactMarkdown>
                 </h3>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  {renderContentWithLineBreaks(topic.content)}
-                </p>
+                <p
+                  className="text-lg text-gray-300 leading-relaxed"
+                  dangerouslySetInnerHTML={{
+                    __html: formatContent(topic.content),
+                  }}
+                />
               </section>
             ))}
           </div>
