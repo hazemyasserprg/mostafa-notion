@@ -9,11 +9,9 @@ function BlogDetails() {
   if (!blog) return <div className="p-6">Blog not found.</div>;
 
   const renderContentWithLineBreaks = (content) => {
-    // Split the content into paragraphs (based on \n\n)
     const paragraphs = content.split("\n");
 
     return paragraphs.map((para, index) => {
-      // For each paragraph, return it wrapped in a <p> tag or you can use <br /> for line breaks
       return <p key={index}>{para}</p>;
     });
   };
@@ -63,7 +61,7 @@ function BlogDetails() {
             {/* Blog Topics */}
             {blog.topics.map((topic) => (
               <section key={topic.id} id={topic.id} className="mb-16">
-                <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+                <h3 className="text-2xl font-semibold text-main mb-4">
                   {topic.heading}
                 </h3>
                 <p className="text-lg text-gray-300 leading-relaxed">
