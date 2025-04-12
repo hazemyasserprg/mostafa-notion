@@ -8,6 +8,16 @@ function BlogDetails() {
 
   if (!blog) return <div className="p-6">Blog not found.</div>;
 
+  const renderContentWithLineBreaks = (content) => {
+    // Split the content into paragraphs (based on \n\n)
+    const paragraphs = content.split("\n");
+
+    return paragraphs.map((para, index) => {
+      // For each paragraph, return it wrapped in a <p> tag or you can use <br /> for line breaks
+      return <p key={index}>{para}</p>;
+    });
+  };
+
   return (
     <BlurText>
       <div className="max-w-7xl mx-auto p-6 bg-black text-white">
@@ -57,7 +67,7 @@ function BlogDetails() {
                   {topic.heading}
                 </h3>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  {topic.content}
+                  {renderContentWithLineBreaks(topic.content)}
                 </p>
               </section>
             ))}
