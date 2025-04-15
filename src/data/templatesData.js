@@ -5,8 +5,7 @@ const templates = [
     id: 1,
     name: "Quran Tracker Premium",
     slug: "quran-tracker-premium",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/25a468b0-8655-4db5-8262-c2d0608f0209",
+    checkout: "https://www.notion.com/templates/quran-tracker-559",
     price: "$5",
     image: images.templateOne,
     category: "Islam",
@@ -18,8 +17,7 @@ const templates = [
     id: 2,
     name: "90-Day Challenge Premium",
     slug: "90-day-challenge-premium",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/50341665-48b1-45bc-b025-8b27e6137925",
+    checkout: "https://www.notion.com/templates/90-day-challenge-883",
     price: "$3",
     image: images.templateTwo,
     category: "Productivity",
@@ -31,8 +29,7 @@ const templates = [
     id: 3,
     name: "Ibadat Tracker",
     slug: "ibadat-tracker",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/7dad3c6f-9dc1-46a5-a002-ad891f473ae9",
+    checkout: "https://www.notion.com/templates/ibadat-tracker",
     price: "$0",
     image: images.templateThree,
     category: "Islam",
@@ -44,8 +41,7 @@ const templates = [
     id: 4,
     name: "Quran Tracker",
     slug: "quran-tracker",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/7ae33942-0c79-4153-808f-cc9c0c0a45b5",
+    checkout: "https://www.notion.com/templates/qurantracker",
     price: "$0",
     image: images.templateFour,
     category: "Islam",
@@ -57,8 +53,7 @@ const templates = [
     id: 5,
     name: "Study Planner",
     slug: "study-planner",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/11d29e73-ee40-41c7-a8a6-2489bb2f81b4",
+    checkout: "https://www.notion.com/templates/study-planner-654",
     price: "$0",
     image: images.templateFive,
     category: "Education",
@@ -70,8 +65,7 @@ const templates = [
     id: 6,
     name: "Weekly Planner",
     slug: "weekly-planner",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/6f74df07-f360-464f-91ab-f74ee2db276f",
+    checkout: "https://www.notion.com/templates/weekly-planner-888",
     price: "$0",
     image: images.templateSix,
     category: "Productivity",
@@ -83,8 +77,7 @@ const templates = [
     id: 7,
     name: "Habit Tracker",
     slug: "habit-tracker",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/b9ef6dc2-c53b-438c-a03d-baf2c9c0e2c8",
+    checkout: "https://www.notion.com/templates/habit-tracker-615",
     price: "$0",
     image: images.templateSeven,
     category: "Productivity",
@@ -96,8 +89,7 @@ const templates = [
     id: 8,
     name: "Reading Tracker",
     slug: "reading-tracker",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/2f572fca-c58d-4797-b71a-8f5e22921764",
+    checkout: "https://www.notion.com/templates/reading-tracker-663",
     price: "$0",
     image: images.templateEight,
     category: "Education",
@@ -109,8 +101,7 @@ const templates = [
     id: 9,
     name: "90-Day Challenge",
     slug: "90-day-challenge",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/2e8f6112-e298-4186-bb54-6e7c9cbd23c4",
+    checkout: "https://www.notion.com/templates/90-day-challenge-959",
     price: "$0",
     image: images.templateNine,
     category: "Productivity",
@@ -122,8 +113,7 @@ const templates = [
     id: 10,
     name: "Quran Memorization",
     slug: "quran-memorization",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/ded951d3-bb99-4cdc-87c0-03be9ca6adef",
+    checkout: "https://www.notion.com/templates/memorizing-the-quran",
     price: "$0",
     image: images.templateTen,
     category: "Islam",
@@ -135,8 +125,7 @@ const templates = [
     id: 11,
     name: "Ramadan Tracker",
     slug: "ramadan-tracker",
-    checkout:
-      "https://mostafayasser.lemonsqueezy.com/buy/e31d71c7-0b7a-470d-b265-f547ad500f42",
+    checkout: "https://www.notion.com/templates/ramadan-tracker-931",
     price: "$0",
     image: images.templateEleven,
     category: "Islam",
