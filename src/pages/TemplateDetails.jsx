@@ -45,14 +45,12 @@ function TemplateDetails() {
 
             <a
               href={template.detailsLink}
+              onClick={(e) => e.preventDefault()}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-block overflow-hidden px-6 py-3 font-medium text-white bg-black rounded-full group shadow-secondary"
+              className="inline-block cursor-no-drop overflow-hidden px-6 py-3 font-medium text-white bg-black rounded-full shadow-secondary opacity-50"
             >
-              <span className="absolute top-0 left-0 w-full h-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out origin-left" />
-              <span className="relative block text-lg transform transition-all duration-300 ease-in-out group-hover:text-main">
-                More Details
-              </span>
+              <span className="block text-lg">More Details</span>
             </a>
           </div>
         </div>
