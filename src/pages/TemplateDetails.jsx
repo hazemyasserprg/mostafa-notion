@@ -44,7 +44,7 @@ function TemplateDetails() {
             </a>
 
             <a
-              href={template.detailsLink}
+              // href={template.detailsLink}
               onClick={(e) => e.preventDefault()}
               target="_blank"
               rel="noopener noreferrer"
